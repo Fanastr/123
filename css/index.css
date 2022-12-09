@@ -1,0 +1,42 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.block h2 {
+    color: #f94f0d;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    margin: 0;
+}
+
+.block > .slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.block > .slider .img-container {
+    overflow: hidden;
+}
+.block > .slider .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.block > .slider .slider__item {
+    width: 145px;
+    height: 145px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.block > .slider .slider__item p {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+}

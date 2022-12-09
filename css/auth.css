@@ -1,0 +1,38 @@
+.content {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+form input,
+form a {
+    color: #000;
+    font-weight: normal;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: #f5f5f5;
+    padding: .6em 1em;
+    transition: .2s;
+}
+form a {
+    text-align: center;
+}
+form input[type="submit"] {
+    cursor: pointer;
+}
+form input[type="submit"]:hover,
+form a:hover {
+    color: #fff;
+    background: #f94f0d;
+}

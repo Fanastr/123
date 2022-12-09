@@ -1,0 +1,160 @@
+div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    cursor: pointer;
+    padding: .5em 1em;
+    transition: .2s;
+    z-index: 9999;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    gap: 0;
+}
+form input,
+form textarea,
+.radio-container > a,
+form a {
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: #f5f5f5;
+    padding: .6em 1em;
+    transition: .2s;
+}
+form input[type="submit"] {
+    cursor: pointer;
+}
+form input[type="submit"]:hover,
+.radio-container > a:hover,
+form a:hover {
+    color: #fff;
+    background: #f94f0d;
+}
+form input:not(input[type="submit"]),
+form textarea {
+    width: 100%;
+}
+form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px;
+}
+form h1 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 25px;
+    color: #f94f0d;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 500;
+    margin: 0;
+}
+form > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+form label {
+    width: 100%;
+    color: #f94f0d;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+form input[type="file"] {
+    border-top-left-radius: 0;
+}
+form .radio-container {
+    width: 100%;
+    overflow: hidden;
+}
+form .radio-container > label:not(label:first-child) {
+    width: 100%;
+    text-transform: none;
+    padding: 0;
+    background: transparent;
+}
+form input[type="radio"] {
+    display: none;
+}
+form input[type="radio"] + span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 25px;
+    font-weight: 500;
+    color: #333;
+    background: transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+form input[type="radio"] + span::before {
+    content: "";
+    margin-right: 10px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    transition: .2s;
+}
+form input[type="radio"]:checked + span {
+    color: #000;
+}
+form input[type="radio"]:checked + span::before {
+    background: #000;
+    border-color: #000;
+}
+form input[type="radio"] + span:hover::before {
+    border-color: #000;
+}
+form input[type="radio"] + span:hover {
+    background: #f5f5f5;
+}
+
+.radio-container > a {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.error-mes {
+    padding: 10px 25px;
+    background: #ffd1d1;
+    font-weight: 500;
+}
+
+.category,
+.type {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.category::before,
+.type::before {
+    content: "Список категорий";
+    font-size: 18px;
+    font-weight: 500;
+    color: #f94f0d;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    padding: 10px 25px;
+    border-bottom: 1px solid #eee;
+}
+.type::before {
+    content: "Список типов товаров";
+}
+.category > a,
+.type > a {
+    margin: 15px;
+}
+
+.remove-link {
+    margin-bottom: 10px;
+}
